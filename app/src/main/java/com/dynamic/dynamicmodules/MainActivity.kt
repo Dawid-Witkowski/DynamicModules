@@ -3,6 +3,7 @@ package com.dynamic.dynamicmodules
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -79,6 +80,7 @@ fun Screen(paddingValues: PaddingValues) {
                         "com.dynamic.dynamicmodules",
                         "com.dynamic.dynamicfeature.FeatureActivity"
                     )
+                    Toast.makeText(context, intent.component?.className ?: "null", Toast.LENGTH_LONG).show()
                     context.startActivity(intent)
                 } catch (e: Exception) {
                     Toast.makeText(

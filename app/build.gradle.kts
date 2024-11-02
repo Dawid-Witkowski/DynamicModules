@@ -11,8 +11,8 @@ android {
         applicationId = "com.dynamic.dynamicmodules"
         minSdk = 26
         targetSdk = 34
-        versionCode = 13
-        versionName = "13.0"
+        versionCode = 16
+        versionName = "16.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -22,7 +22,7 @@ android {
 
     buildTypes {
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
