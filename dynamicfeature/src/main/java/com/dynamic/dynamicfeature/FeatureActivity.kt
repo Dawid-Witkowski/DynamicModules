@@ -22,7 +22,7 @@ class FeatureActivity : AppCompatActivity() {
 
     override fun attachBaseContext(base: Context?) {
         super.attachBaseContext(base)
-        SplitCompat.install(this)
+        SplitCompat.installActivity(this)
     }
 
 }
